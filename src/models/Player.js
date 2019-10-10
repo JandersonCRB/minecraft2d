@@ -1,6 +1,8 @@
 const Entity = require('./Entity');
 
 class Player extends Entity {
+    currentMap = null;
+
     constructor({x, y} = {}) {
         super({x, y});
         this.onMoved = () => null;
